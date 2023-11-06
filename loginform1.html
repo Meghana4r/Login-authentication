@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+   
+        .login-form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height:400px;
+            padding: 30px;
+            box-sizing: border-box;
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .logo img {
+            width: 50px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #202124;
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .inputbox {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .inputbox input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .inputbox i {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: #ccc;
+        }
+
+        .inputbox input:focus ~ i {
+            color: #1a73e8;
+        }
+
+        .inputbox label {
+            position: absolute;
+            top: 0;
+            left: 40px;
+            padding: 10px 0;
+            color: grey;
+            pointer-events: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .inputbox input:focus ~ label,
+        .inputbox input:valid ~ label {
+            top: -18px;
+            font-size: 12px;
+            color: #1a73e8;
+        }
+
+        input[type="submit"] {
+            border: none;
+            outline: none;
+            color: #fff;
+            background-color: #1a73e8;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .forgot button {
+            outline: none;
+            color: #1a73e8;
+            font-weight: 500;
+            background-color: transparent;
+            border: none;
+            text-align: left;
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="login-form">
+        <div class="logo"><img src="fit.jpeg" alt=""></div>
+        <h2>LOGIN HERE</h2>
+        <p>Your health is an investment, not an expense.</p>
+        <form action="">
+            <div class="inputbox">
+                <input type="email" name="email" id="" value="" required>
+                <label for="">Email or Phone</label>
+            </div>
+            <div class="inputbox">
+                <input type="password" name="password" id="" value="" required>
+                <label for="">Password</label>
+            </div>
+            <div class="forgot">
+                <button> Forgot Your Login Details</button>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
+
